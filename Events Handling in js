@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!-- <h1 onclick="this.innerHTML='This is updated list'">Color Names</h1> -->
+        <h1 onclick="display(this)">Color Names</h1>
+        <ul type="none">
+            <li>Red</li>
+            <li>Blue</li>
+            <li>Yellow</li>
+        </ul>
+    </div>
+    <div>
+        <button onclick="btnDate()">Click Me</button>
+        <p id="demo"></p>
+    </div>
+    <div>
+        <h1>Fruits Names</h1>
+        <ol class="fruit" type="I">
+            <li>Apple</li>
+            <li>Grapes</li>
+            <li>Mangoes</li>
+            <li>Banana</li>
+        </ol>
+    </div>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: red; width: 120px; padding: 20px; ">
+        Mouse Over me! 
+    </div>
+    <script>
+        function display(obj){
+            obj.innerHTML="This is updated list";
+        }
+        function btnDate(){
+            document.getElementById("demo").innerHTML=new Date;
+        }
+        function mOver(obj) {
+            obj.innerHTML="Thanks Bro";
+        }
+        function mOut(obj) {
+            obj.innerHTML="Mouse Over please";
+        }
+    </script>
+</body>
+</html>
